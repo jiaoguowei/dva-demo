@@ -1,0 +1,16 @@
+{
+  "disableCSSModules": true, 
+  "proxy": {
+    "/api11": {
+      "target": "http://your-api-server",
+      "changeOrigin": false
+    }
+  },
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    }
+  }
+}
