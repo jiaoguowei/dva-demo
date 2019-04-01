@@ -5,7 +5,7 @@
 //  })
 //})
 // 定义一个防抖函数
-function debounce(fn, step = 100 ) {
+export function debounce(fn, step = 100 ) {
   let timeout = null;
   return function () {
     clearTimeout(timeout);
@@ -13,4 +13,15 @@ function debounce(fn, step = 100 ) {
       fn.apply(this, arguments);
     }, step);
   }
+}
+export function getObjectURL(file) {
+  var url = null ;
+  if (window.createObjectURL!=undefined) { // basic
+      url = window.createObjectURL(file) ;
+  } else if (window.URL!=undefined) { // mozilla(firefox)
+      url = window.URL.createObjectURL(file) ;
+  } else if (window.webkitURL!=undefined) { // webkit or chrome
+      url = window.webkitURL.createObjectURL(file) ;
+  }
+  return url ;
 }

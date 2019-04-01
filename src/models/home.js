@@ -1,5 +1,6 @@
 import { getList } from '../services/home'
 
+
 export default {
 
   namespace: 'home',
