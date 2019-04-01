@@ -45,4 +45,5 @@ let change_c = zh_CN;
 
 addLocaleData([...en,...zh]);
 
+
 ReactDOM.render(<IntlProvider locale={change} messages={change_c}><App/></IntlProvider>, document.getElementById('root'))

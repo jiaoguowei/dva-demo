@@ -1,5 +1,7 @@
 import fetch from 'dva/fetch';
 
+console.log(process.env.NODE_ENV)
+
 function parseJSON(response) {
   return response.json();
 }

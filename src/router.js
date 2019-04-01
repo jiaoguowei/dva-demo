@@ -28,6 +28,7 @@ function RouterConfig({ history, app}) {
             )
           })
         }
+        <Redirect from="/" to="/home"></Redirect>
       </Switch>
     </Router>
   )
