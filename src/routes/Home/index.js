@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'dva'
 import { Link } from 'dva/router'
 import { injectIntl } from 'react-intl'
-import ComButton from '../../components/Button'
+import ComButton from '~/components/Button'
 import styles from './index.less'
 
 class Home extends React.Component {

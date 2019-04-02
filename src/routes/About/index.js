@@ -50,7 +50,6 @@ class About extends React.Component {
               }}
               onChange={this.handleUpload}
             />
-
           </label>
           <br />
           <button type="submit">Submit</button>

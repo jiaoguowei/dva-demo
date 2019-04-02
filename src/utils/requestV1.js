@@ -8,7 +8,7 @@ const isDev = process.env.NODE_ENV === 'development';
 // 错误处理文件
 
 const instance = axios.create({
-  baseURL: isDev ? '/fakeapi' : '/api',
+  // baseURL: isDev ? '/fakeapi' : '/api',
   timeout: 5000,
   headers: {
     // 定义post请求编码格式
