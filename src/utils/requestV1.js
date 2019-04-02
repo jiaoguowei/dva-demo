@@ -24,7 +24,6 @@ const queue = []
 // axios内置的请求中断ajax的方法
 
 const CancelToken = axios.CancelToken;
-console.dir(axios)
 
 // 拼接请求的url和方法，同样的url+方法可以视作相同的请求
 

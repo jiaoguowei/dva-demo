@@ -1,5 +1,6 @@
 import dva from 'dva';
 import ReactDOM from 'react-dom'
+import React from 'react'
 import './index.css';
 import createLoading from 'dva-loading'
 import { IntlProvider,addLocaleData } from 'react-intl';
@@ -8,10 +9,11 @@ import 'intl/locale-data/jsonp/en';
 import zh from 'react-intl/locale-data/zh';
 import en from 'react-intl/locale-data/en';
 import zh_CN from './config/zh_CN';
-import en_US from './config/en_US';
+// import en_US from './config/en_US';
 import { createHashHistory as createHistory } from 'history'
 
 
+console.log('查看react对象', React)
 // 1. Initialize
 const app = dva({
   history: createHistory(),

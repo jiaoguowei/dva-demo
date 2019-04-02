@@ -1,5 +1,5 @@
 const path = require('path')
-let webpack = require('webpack')
+// let webpack = require('webpack')
 
 
 export default {
@@ -20,6 +20,9 @@ export default {
   alias: {
     '~': path.resolve(__dirname, './src')
   },
+  // externals: {
+  //   "react": "window.React",
+  // },
   publicPath: '/',
   manifest: {
     "basePath": "/"
