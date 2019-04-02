@@ -2,7 +2,12 @@ import React from 'react'
 import { connect } from 'dva'
 import { routerRedux } from 'dva/router'
 import { getObjectURL } from '../../utils/utils'
+import ChangeInput from '../../decorator/ChangeInput'
 
+
+@ChangeInput({
+  initValue: '请输入名字'
+})
 class About extends React.Component {
   constructor(props) {
     super(props)
@@ -14,6 +19,9 @@ class About extends React.Component {
   }
   componentDidMount(){
     this.imgBox = document.getElementById("imgBox")
+  }
+  componentWillReceiveProps() {
+    console.log('------', this.dom.value)
   }
   handleClick() {
     const { dispatch } = this.props
@@ -55,6 +63,7 @@ class About extends React.Component {
           <button type="submit">Submit</button>
         </form>
         <img src="" alt="" id="imgBox"/>
+        <input type="text" {...this.props.name } ref={(dom) => this.dom = dom}/>
       </div>
     )
   }
