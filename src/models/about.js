@@ -3,7 +3,7 @@ export default {
   namespace: 'about',
 
   state: {
-    value: '欢迎来到onesight'
+    value: '欢迎来到我的站点'
   },
 
   subscriptions: {
