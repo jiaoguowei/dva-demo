@@ -1,3 +1,2 @@
 const en_US = {
-	
 }

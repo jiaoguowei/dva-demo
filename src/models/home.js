@@ -6,7 +6,7 @@ export default {
   namespace: 'home',
 
   state: {
-    value: '欢迎来到onesight'
+    value: '欢迎来到'
   },
 
   subscriptions: {
